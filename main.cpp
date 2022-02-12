@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
     //Add to the root context
     View view;
-    engine.rootContext()->setContextProperty("view", &view);
+    engine.rootContext()->setContextProperty("view_", &view);
 
 
      //The URL of the QML file, notice this is a compiled resource
@@ -36,7 +36,6 @@ int main(int argc, char *argv[])
 
     //The engine loading the QML file
     engine.load(url);
-
 
     //The application entering an event loop that keeps the application open
     return app.exec();

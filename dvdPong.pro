@@ -18,6 +18,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+        Ball.cpp \
+        Boundarie.cpp \
         View.cpp \
         main.cpp
         main.cpp
@@ -31,4 +33,6 @@ RESOURCES += \
     res.qrc
 
 HEADERS += \
+    Ball.h \
+    Boundarie.h \
     View.h
