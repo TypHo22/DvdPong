@@ -1,8 +1,6 @@
 QT += core gui
 QT += quick
-#QT += widgets
-#QT += multimedia
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets multimedia
+QT += widgets
 CONFIG += c++14 console
 
 
@@ -40,4 +38,6 @@ HEADERS += \
     View.h
 
 DISTFILES += \
+    ball.qml \
+    dvd.png \
     pong.wav

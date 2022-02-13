@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>window.qml</file>
         <file>pong.wav</file>
+        <file>dvd.png</file>
     </qresource>
 </RCC>

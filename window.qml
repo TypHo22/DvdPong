@@ -1,6 +1,8 @@
 import QtQuick 2.0
 import QtQuick.Window 2.2
 import QtQml 2.15
+import QtQuick 2.15
+
 Window
 {
     id: displayWindow
@@ -12,22 +14,25 @@ Window
     minimumHeight: 500
     minimumWidth: 500
 
-    color: "white"
+    color: "black"
 
     Rectangle
     {
         id: ball
         x: displayWindow.width / 2
         y: displayWindow.height / 2
-        width: 10
-        height: 10
+        width: 50
+        height: 50
         color.r: 0
         color.g: 0
         color.b: 1
         //border.color: "black"
         //border.width: 5
         //radius: 10
-
+        Image {
+            source: "dvd.png"
+            anchors.fill: parent
+        }
     }
 
     Connections
@@ -59,6 +64,8 @@ Window
     {
         view_.aquireBoundaries(ball.x,ball.y,displayWindow.width,displayWindow.height);
         view_.startSimulation();
+
+
     }
 }
 
