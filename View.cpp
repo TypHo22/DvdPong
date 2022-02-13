@@ -1,7 +1,8 @@
 #include <View.h>
 #include <iostream>
 #include <thread>
-
+#include <random>
+#include <chrono>
 float View::simulationCycleSeconds_ = 0.005;
 View::View(QObject *parent)
 {
@@ -29,6 +30,7 @@ void View::startSimulation()
             if(!boundarie_.checkInsideOfBoundarie(x,y))  //ball must get reflected, and play sound
             {
                 ball_.deflect();
+                emit changeColor (((double) rand() / (RAND_MAX)),((double) rand() / (RAND_MAX)),((double) rand() / (RAND_MAX)));
             }
 
             emit updateBallPosition(x,y);

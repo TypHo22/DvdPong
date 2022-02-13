@@ -1,7 +1,7 @@
-QT += gui
+QT += core gui
 QT += quick
-QT += widgets
-
+#QT += widgets
+#QT += multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets multimedia
 CONFIG += c++14 console
 

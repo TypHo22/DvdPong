@@ -1,7 +1,7 @@
 #include "Ball.h"
-#include <QSoundEffect>
+#include <QApplication>
 
-Ball::Ball() : ax_(20),ay_(200),vx_(500),vy_(400),x_(250),y_(250) //x,y positions taken from qml center of window
+Ball::Ball() : ax_(0),ay_(0),vx_(500),vy_(400),x_(250),y_(250) //x,y positions taken from qml center of window
 {
 
 }
@@ -31,11 +31,7 @@ void Ball::deflect()
     else if(y_ >= 500.0)
         deflectOnBottom();
 
-    QSoundEffect effect;
-
-
-
-
+    QApplication::beep();
 }
 
 float Ball::x() const

@@ -1,7 +1,5 @@
 #ifndef BALL_H
 #define BALL_H
-
-
 class Ball
 {
 public:
@@ -33,7 +31,6 @@ private:
     float y_;
     float vectorX_;
     float vectorY_;
-
 };
 
 #endif // BALL_H

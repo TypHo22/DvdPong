@@ -14,7 +14,6 @@ Window
 
     color: "white"
 
-
     Rectangle
     {
         id: ball
@@ -22,12 +21,13 @@ Window
         y: displayWindow.height / 2
         width: 10
         height: 10
-        color: "red"
-        border.color: "black"
-        border.width: 5
-        radius: 10
+        color.r: 0
+        color.g: 0
+        color.b: 1
+        //border.color: "black"
+        //border.width: 5
+        //radius: 10
 
-        Component.onCompleted: view_.startSimulation();
     }
 
     Connections
@@ -46,9 +46,20 @@ Window
             ball.x = x;
             ball.y = y;
         }
+
+        onChangeColor:
+        {
+            ball.color.r = r;
+            ball.color.g = g;
+            ball.color.b = b;
+        }
     }
 
-    Component.onCompleted: view_.aquireBoundaries(ball.x,ball.y,displayWindow.width,displayWindow.height);
+    Component.onCompleted:
+    {
+        view_.aquireBoundaries(ball.x,ball.y,displayWindow.width,displayWindow.height);
+        view_.startSimulation();
+    }
 }
 
 

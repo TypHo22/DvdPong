@@ -11,6 +11,7 @@ public:
 
 signals:
     void updateBallPosition(float x, float y);
+    void changeColor(float r, float g, float b);
     void randomSig();
 
 public slots:
