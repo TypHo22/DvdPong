@@ -221,6 +221,7 @@ Makefile: ../dvdPong.pro C:/Qt/6.2.0/mingw81_64/mkspecs/win32-g++/qmake.conf C:/
 		../dvdPong.pro \
 		C:/Qt/6.2.0/mingw81_64/lib/Qt6Quick.prl \
 		C:/Qt/6.2.0/mingw81_64/lib/Qt6OpenGL.prl \
+		C:/Qt/6.2.0/mingw81_64/lib/Qt6Multimedia.prl \
 		C:/Qt/6.2.0/mingw81_64/lib/Qt6Widgets.prl \
 		C:/Qt/6.2.0/mingw81_64/lib/Qt6Gui.prl \
 		C:/Qt/6.2.0/mingw81_64/lib/Qt6QmlModels.prl \
@@ -381,6 +382,7 @@ C:/Qt/6.2.0/mingw81_64/mkspecs/features/lex.prf:
 ../dvdPong.pro:
 C:/Qt/6.2.0/mingw81_64/lib/Qt6Quick.prl:
 C:/Qt/6.2.0/mingw81_64/lib/Qt6OpenGL.prl:
+C:/Qt/6.2.0/mingw81_64/lib/Qt6Multimedia.prl:
 C:/Qt/6.2.0/mingw81_64/lib/Qt6Widgets.prl:
 C:/Qt/6.2.0/mingw81_64/lib/Qt6Gui.prl:
 C:/Qt/6.2.0/mingw81_64/lib/Qt6QmlModels.prl:

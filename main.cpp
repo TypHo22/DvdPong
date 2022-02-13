@@ -2,7 +2,6 @@
 #include <QtQml/QQmlApplicationEngine>
 #include <QQmlContext>
 #include <View.h>
-
 #include <QApplication>
 //Entry point of the application
 

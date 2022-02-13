@@ -10,7 +10,9 @@ View::View(QObject *parent)
 
 void View::aquireBoundaries(float bStartX, float bStartY, float windowHeight, float windowWidth)
 {
-    int d = 3;
+    boundarie_.setBoundarie(windowWidth,windowHeight);
+    ball_.setX(bStartX);
+    ball_.setY(bStartY);
 }
 
 void View::startSimulation()
@@ -24,9 +26,9 @@ void View::startSimulation()
             const float x = ball_.x();
             const float y = ball_.y();
 
-            if(boundarie_.checkInsideOfBoundarie(x,y))  //ball must get reflected, and play sound
+            if(!boundarie_.checkInsideOfBoundarie(x,y))  //ball must get reflected, and play sound
             {
-
+                ball_.deflect();
             }
 
             emit updateBallPosition(x,y);

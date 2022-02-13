@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>window.qml</file>
+        <file>pong.wav</file>
     </qresource>
 </RCC>

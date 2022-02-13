@@ -1,6 +1,8 @@
 QT += gui
 QT += quick
 QT += widgets
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets multimedia
 CONFIG += c++14 console
 
 
@@ -36,3 +38,6 @@ HEADERS += \
     Ball.h \
     Boundarie.h \
     View.h
+
+DISTFILES += \
+    pong.wav
